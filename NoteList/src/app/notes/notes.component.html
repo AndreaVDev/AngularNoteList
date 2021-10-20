@@ -1,0 +1,13 @@
+<mat-list>
+	<mat-list-item *ngFor="let note of notes">
+		<mat-card class="card">
+			<mat-card-title-group>
+				<mat-card-title>{{note.title}}</mat-card-title>
+				<mat-card-subtitle>{{note.id}}</mat-card-subtitle>
+			</mat-card-title-group>
+			<mat-card-content>
+				{{note.description}}
+			</mat-card-content>
+		</mat-card>
+	</mat-list-item>
+</mat-list>
