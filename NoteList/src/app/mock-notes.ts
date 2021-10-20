@@ -10,5 +10,6 @@ export const NOTES: Note[] = [
 	{id: 6, title: 'Video', description: 'Create video of summer 2021'},
 	{id: 7, title: 'Photo', description: 'Print photost of summer 2021'},
 	{id: 8, title: 'Training', description: 'Lift some weights'},
-	{id: 9, title: 'Doctor', description: 'Do a general checkup'}
+	{id: 9, title: 'Doctor', description: 'Do a general checkup'},
+	{id: 10, title: 'Doctor', description: 'Do a general checkup'},
 ];
