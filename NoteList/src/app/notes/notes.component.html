@@ -21,7 +21,7 @@ BASE HTML WITH SIMPLE CSS
 
 <div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
 <ng-container *ngFor="let note of notes">
-    <mat-card >
+    <mat-card fxFlex="0 1 calc(33.3% - 32px)">
 			<mat-card-title-group>
 				<mat-card-title>{{note.title}}</mat-card-title>
 				<mat-card-subtitle>{{note.id}}</mat-card-subtitle>
