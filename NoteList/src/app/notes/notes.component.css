@@ -1,10 +1,14 @@
 .main-div{
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .card {
-	margin-top:5em;
+	margin-top:5.0em;
+	margin-bottom: 1.0em;
+}
+
+mat-card{
+    width: 90%;
 }
