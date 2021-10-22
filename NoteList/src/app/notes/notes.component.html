@@ -22,13 +22,17 @@ BASE HTML WITH SIMPLE CSS
 <div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
 <ng-container *ngFor="let note of notes">
     <mat-card fxFlex="0 1 calc(33.3% - 32px)">
-			<mat-card-title-group>
-				<mat-card-title>{{note.title}}</mat-card-title>
+		<mat-card-title-group>
+			<mat-card-title>{{note.title}}</mat-card-title>
 				<mat-card-subtitle>{{note.id}}</mat-card-subtitle>
 			</mat-card-title-group>
 			<mat-card-content>
 				{{note.description}}
 			</mat-card-content>
-		</mat-card>
+			<mat-form-field class="edit-titleform">
+				<mat-label>New Title</mat-label>
+				<input matInput type="text" [(ngModel)]="note.title">
+			</mat-form-field>
+	</mat-card>
   </ng-container>
 </div>
